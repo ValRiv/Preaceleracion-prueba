@@ -23,7 +23,7 @@ public class GeneroMapper {
         dto.setNombre(entity.getNombre());
         return dto;
     }
-    public List<GeneroDto> generoEntetyListDTO2EntityList(List<GeneroEntity>entities){
+    public List<GeneroDto> generoEntityListDTO2List(List<GeneroEntity>entities){
         List<GeneroDto>dtos =new ArrayList<>();
         for (GeneroEntity entity: entities) {
             dtos.add(GeneroEntity2Dto(entity));

@@ -1,11 +1,13 @@
 package com.disney.preaceleracion.dto;
 
+
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.Column;
 import java.time.LocalDate;
+import java.util.List;
 
 @Setter
 @Getter
@@ -19,5 +21,7 @@ public class PeliculaDto {
     private LocalDate fechaDeCreacion;
 
     private int calificacion;
+    private Long generoId;
+    private List<PersonajeDto> personajes;
 
 }

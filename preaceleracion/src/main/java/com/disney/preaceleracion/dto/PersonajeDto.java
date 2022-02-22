@@ -7,6 +7,7 @@ import javax.persistence.Column;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import java.util.List;
 
 @Setter
 @Getter
@@ -20,5 +21,6 @@ public class PersonajeDto {
     private Long Edad;
     private Long peso;
     private String historia;
+    private List<PeliculaDto>peliculas;
 
 }
